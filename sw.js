@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cotiza3d-pwa-v2-2-20261111';
+const CACHE_NAME = 'cotiza3d-pwa-v2-2-1-20261111';
 const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)).then(() => self.skipWaiting()));
@@ -14,7 +14,7 @@ self.addEventListener('fetch', event => {
   if (u.origin !== scope.origin || !u.pathname.startsWith(scope.pathname)) return;
   event.respondWith((async () => {
     try {
-      const response = await fetch(request);
+      const response = await (request.mode === 'navigate' ? Promise.race([fetch(request), new Promise((_, reject) => setTimeout(() => reject(new Error('Red lenta')), 6000))]) : fetch(request));
       if (response && response.ok) {
         const cache = await caches.open(CACHE_NAME);
         cache.put(request, response.clone()).catch(() => {});
