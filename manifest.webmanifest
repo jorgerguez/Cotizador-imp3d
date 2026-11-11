@@ -2,14 +2,13 @@
   "id": "./",
   "name": "Cotiza3D · Calculadora de impresión 3D",
   "short_name": "Cotiza3D",
-  "description": "Cotiza piezas impresas en 3D, administra filamentos y compara precios de venta directa.",
+  "description": "Calculadora de precios para impresiones 3D: Bambu Handy, costos, márgenes y reservas.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f9f7",
-  "theme_color": "#102d2c",
+  "background_color": "#f5f8f6",
+  "theme_color": "#123630",
   "lang": "es-MX",
-  "orientation": "any",
   "icons": [
     {
       "src": "./icon-192.png",
