@@ -1,0 +1,7 @@
+Cotiza3D v2.2 — actualiza los archivos en la raíz de GitHub Pages. Antes de actualizar, descarga un respaldo JSON de la aplicación actual.
+
+Abre index.html en navegador o publica estos archivos juntos por HTTPS para instalar la PWA.
+
+Cambios: captura móvil simplificada, tiempo dual, validaciones de datos, lotes incompletos, recomendación de precio cautelosa, claridad de distribución de ingresos y venta con mamá.
+
+Los datos actuales usan la misma clave que v2.1. Si cambias de origen o dispositivo, importa el respaldo JSON.
